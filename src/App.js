@@ -8,7 +8,7 @@ function App() {
   return (
     <>
     <Layout>
-    <h1>Devyx</h1>
+    <Navbar />
     </Layout>
     <GlobalStyles />
     </>
