@@ -2,10 +2,11 @@ import React from 'react';
 
 import {Products, Developers, Company} from '../Content'
 import { Container, DropDownStyles } from './styles';
-import {DropDownOption} from '../DropDown'
+import {DropDownOption, DropDownProvider, DropDownRoot} from '../DropDown'
 
 function Navbar() {
   return (
+      <DropDownProvider>
       <DropDownStyles>
       <Container>
           <ul>
@@ -29,7 +30,10 @@ function Navbar() {
               </li>
           </ul>
       </Container>
+
+      <DropDownRoot />
       </DropDownStyles>
+      </DropDownProvider>
   );
 }
 
